@@ -9,8 +9,8 @@ function Answer(text, name, score=0, date){
     this.date = dayjs(date);
 
     this.toString = () => {
-        return '${this.name}' replied '${this.text}'on '${this.date.format(YYYY-MM-DD)}'
-                and got a score of ${this.score};
+        return `'${this.name}' replied '${this.text}'on '${this.date.format(YYYY-MM-DD)}'
+                and got a score of ${this.score}`;
         }
 }
 
@@ -47,7 +47,7 @@ function Question(text, name, date){
     }
 
     this.toString = () => {
-    return Question '${this.text}' asked by '${this.name}'on '${this.date};
+    return `Question '${this.text}' asked by '${this.name}'on '${this.date}`;
     }
 }
 
